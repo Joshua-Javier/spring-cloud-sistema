@@ -1,7 +1,7 @@
 server:
   port: ${PORT:8863}
 message: Configuracion de Cajero en el servidor levantado!
-spring:
+ spring:
   datasource:
     drive-class-name: com.mysql.cj.jdbc.Driver
     password: 12345678
