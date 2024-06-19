@@ -1,16 +1,16 @@
 server:
   port: ${PORT:8863}
-message: Configuracion de Cajero en el servidor levantado!
- spring:
+message: Congifuracion de Local en el servidor levantado
+spring:
   datasource:
-    drive-class-name: com.mysql.cj.jdbc.Driver
-    password: 12345678
-    url: jdbc:mysql://localhost3306/crudcloud?serverTimezone=UTC
-    username: root 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456789
+    url: jdbc:mysql://localhost:3306/crudcloud?serverTimezone=UTC
+    username: root
   jpa:
     hibernate:
       ddl-auto: update
       database-platform: org.hibernate.dialect.MySQLDialect
-    cloud:
-      confing:
-        uri: http://localhost: 8860
+  cloud:
+    config:
+      uri: http://localhost:8860
